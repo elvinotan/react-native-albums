@@ -535,9 +535,13 @@ return (
 a. Mastering Layout with Flexbox</br>
 Renca layout untuk header</br>
 ![header](https://github.com/elvinotan/react-native-albums/blob/master/images/header.png)</br>
+space-around = space di sekitar component</br>
+space-between = space di antara component</br>
 
+b. Positioning of Elements on Mobile</br>
+flexDirection : ('Row', 'Column') Orientasi untuk justifyContent (Seara default adalah column)</br>
+justifyContent : ('flex-start', 'center','flex-end', 'space-around', 'space-between')</br>
 
-B. Positioning of Elements on Mobile
 c. More on Styling
 d. Images with React Native
 e. Displaying Album Artwork

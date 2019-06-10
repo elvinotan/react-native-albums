@@ -622,7 +622,7 @@ TouchableWithoutFeedback: Tanpa feedback</br>
 h. Styling of Buttons with UX Considerations</br>
 Merapihkan tampilan button</br>
 
-i. Responding to User Input/br>
+i. Responding to User Input</br>
 Transfer linking event dari parent compnent to child component</br>
 ```
 <Button onPress={() => console.log("press")} />

@@ -1,4 +1,4 @@
-# React Native
+# React Native Album Project
 
 # Dive Right in
 a. Introduction - Course Roadmaps</br> 

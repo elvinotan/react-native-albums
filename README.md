@@ -531,8 +531,11 @@ return (
     </Card>
   );
 ```  
-# Handling Component Layout
-a. Mastering Layout with Flexbox
+# Handling Component Layout</br>
+a. Mastering Layout with Flexbox</br>
+Renca layout untuk header</br>
+![header](https://github.com/elvinotan/react-native-albums/blob/master/images/header.png)</br>
+
 
 B. Positioning of Elements on Mobile
 c. More on Styling

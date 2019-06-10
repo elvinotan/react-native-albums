@@ -638,6 +638,11 @@ const Button = ({ onPress }) => {
 };
 ```
 
-j. Linking Between Mobile Apps
+j. Linking Between Mobile Apps</br>
+Linking : befungsi untk membukan user mobile current browser</br>
+```
+<Button onPress={() => Linking.openURL(url)} />
+```
+
 k. Setting Button Text by Props
 l. App Wrapup

@@ -619,10 +619,25 @@ TouchableNativeFeedback: Native Feedback, base on os</br>
 TouchableOpacity: Opacity effect</br>
 TouchableWithoutFeedback: Tanpa feedback</br>
 
+h. Styling of Buttons with UX Considerations</br>
+Merapihkan tampilan button</br>
 
-h. Styling of Buttons with UX Considerations
+i. Responding to User Input/br>
+Transfer linking event dari parent compnent to child component</br>
+```
+<Button onPress={() => console.log("press")} />
+```
+```
+const Button = ({ onPress }) => {
+  const { textStyle, buttonStyle } = styles;
+  return (
+    <TouchableOpacity onPress={onPress} style={buttonStyle}>
+      <Text style={textStyle}>Buy</Text>
+    </TouchableOpacity>
+  );
+};
+```
 
-i. Responding to User Input
-10. Linking Between Mobile Apps
-j. Setting Button Text by Props
-k. App Wrapup
+j. Linking Between Mobile Apps
+k. Setting Button Text by Props
+l. App Wrapup

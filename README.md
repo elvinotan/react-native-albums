@@ -593,11 +593,35 @@ const styles = {
 export default AlbumDetail;
 ```
 
+e. Displaying Album Artwork</br>
+Ubah/Tambah Style pada umumnya dan tambah image content</br>
 
-e. Displaying Album Artwork
-f. Making Content Scrollable
+f. Making Content Scrollable</br>
+Untuk membuat suatu screen dapat scrollable kita harus menggunakan ScollView</BR>
+```
+render() {
+return <ScrollView>{this.renderAlbums()}</ScrollView>;
+}
+```  
+
 g. Handling User Input with Buttons
+```
+const Button = () => {
+  return (
+    <TouchableOpacity style={styles.buttonStyle}>
+      <Text>Click Me</Text>
+    </TouchableOpacity>
+  );
+};
+```
+TouchableHighlight : Highlight effect</br>
+TouchableNativeFeedback: Native Feedback, base on os</br>
+TouchableOpacity: Opacity effect</br>
+TouchableWithoutFeedback: Tanpa feedback</br>
+
+
 h. Styling of Buttons with UX Considerations
+
 i. Responding to User Input
 10. Linking Between Mobile Apps
 j. Setting Button Text by Props

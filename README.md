@@ -644,5 +644,21 @@ Linking : befungsi untk membukan user mobile current browser</br>
 <Button onPress={() => Linking.openURL(url)} />
 ```
 
-k. Setting Button Text by Props
-l. App Wrapup
+k. Setting Button Text by Props</br>
+Passing Button label dari parent dgn menggunakan child properties
+```
+<Button onPress={() => Linking.openURL(url)}>Buy at Amazon</Button>
+```
+```
+const Button = ({ onPress, children }) => {
+  const { textStyle, buttonStyle } = styles;
+  return (
+    <TouchableOpacity onPress={onPress} style={buttonStyle}>
+      <Text style={textStyle}>{children}</Text>
+    </TouchableOpacity>
+  );
+};
+```
+
+l. App Wrapup</br>
+

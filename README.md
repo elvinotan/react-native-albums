@@ -531,12 +531,69 @@ return (
     </Card>
   );
 ```  
-# Handling Component Layout
-a. Mastering Layout with Flexbox
+# Handling Component Layout</br>
+a. Mastering Layout with Flexbox</br>
+Renca layout untuk header</br>
+![header](https://github.com/elvinotan/react-native-albums/blob/master/images/header.png)</br>
+space-around = space di sekitar component</br>
+space-between = space di antara component</br>
 
-B. Positioning of Elements on Mobile
-c. More on Styling
+b. Positioning of Elements on Mobile</br>
+flexDirection : ('row', 'column') Orientasi untuk justifyContent (Seara default adalah column)</br>
+justifyContent : ('flex-start', 'center','flex-end', 'space-around', 'space-between')</br>
+
+c. More on Styling</br>
+Implementing Style</br>
+
 d. Images with React Native
+```
+ <Image style={tumbnailStyle} source={{ uri: thumbnail_image }} />
+```
+Image tidak memiliki size, oleh sebab itu di bagian style harus di beri width dan height
+```
+import React from "react";
+import { View, Text, Image } from "react-native";
+import Card from "./Card";
+import CardSection from "./CardSection";
+
+const AlbumDetail = ({ album }) => {
+  const { title, artist, thumbnail_image } = album;
+  const { cardStyle, headerContentStyle, tumbnailStyle } = styles;
+  return (
+    <Card>
+      <CardSection styles={cardStyle}>
+        <View>
+          <Image style={tumbnailStyle} source={{ uri: thumbnail_image }} />
+        </View>
+        <View style={headerContentStyle}>
+          <Text>{title}</Text>
+          <Text>{artist}</Text>
+        </View>
+      </CardSection>
+    </Card>
+  );
+};
+
+const styles = {
+  tumbnailStyle: {
+    width: 50,
+    height: 50
+  },
+  cardStyle: {
+    justifyContent: "flex-start",
+    flexDirection: "row"
+  },
+  headerContentStyle: {
+    justifyContent: "space-around",
+    flexDirection: "column",
+    paddingLeft: 10
+  }
+};
+
+export default AlbumDetail;
+```
+
+
 e. Displaying Album Artwork
 f. Making Content Scrollable
 g. Handling User Input with Buttons

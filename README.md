@@ -104,7 +104,7 @@ const App = () => <Text>Some Text</Text>;
 AppRegistry.registerComponent("albums", () => App);
 ```
 g. Application Outline</br>
-![Outline](https://github.com/elvinotan/react-native/blob/master/images/outline.png)</br>
+![Outline](https://github.com/elvinotan/react-native-albums/blob/master/images/outline.png)</br>
 
 h. The Header Component</br>
 ```
@@ -301,7 +301,7 @@ AlbumList : Component atas yang mengambil data dan render data per group</br>
 AlbumDetail : single screen group tampilan </br>
 
 b. List Component Boilerplate
-![Albumlist](https://github.com/elvinotan/react-native/blob/master/images/albumlist.png)</br>
+![Albumlist](https://github.com/elvinotan/react-native-albums/blob/master/images/albumlist.png)</br>
 ```
 /src/component/AlbumList.js
 import React from "react";
@@ -323,7 +323,7 @@ c. Class Based Components</br>
 Component di bagi menjadi 2 : </br>
 Functional Component : Hanya berfungsi sebagai tampilan saja, terima masukan dan menghasilkan tampilan view (Stateless / Dumb) </br>
 Class Component : Terdapat logic, fetching data dan mengatur bagaiman component di tampilkan (stateful/smart)</br>
-![Componen Type](https://github.com/elvinotan/react-native/blob/master/images/componenttype.png)</br>
+![Componen Type](https://github.com/elvinotan/react-native-albums/blob/master/images/componenttype.png)</br>
 Ubah Function Component to Class Component</br>
 ```
 import React, { Component } from "react";
@@ -381,7 +381,7 @@ export default AlbumList;
 ```
 g. Component Level State</br>
 Probelm dengan Asynch</br>
-![Component Level](https://github.com/elvinotan/react-native/blob/master/images/componenlevel.png)</br>
+![Component Level](https://github.com/elvinotan/react-native-albums/blob/master/images/componenlevel.png)</br>
 
 h. More on Component Level State</br>
 State hanya berada pada class base component (Stateful) </br>
@@ -447,7 +447,7 @@ export default AlbumDetail;
 
 k. Fantastic Reusable Components </br>
 Reuseable component The Card and The CardSection</br>
-![Template](https://github.com/elvinotan/react-native/blob/master/images/template.png)</br>
+![Template](https://github.com/elvinotan/react-native-albums/blob/master/images/template.png)</br>
 
 l. Styling a Card
 ```
@@ -531,3 +531,17 @@ return (
     </Card>
   );
 ```  
+# Handling Component Layout
+a. Mastering Layout with Flexbox
+
+B. Positioning of Elements on Mobile
+c. More on Styling
+d. Images with React Native
+e. Displaying Album Artwork
+f. Making Content Scrollable
+g. Handling User Input with Buttons
+h. Styling of Buttons with UX Considerations
+i. Responding to User Input
+10. Linking Between Mobile Apps
+j. Setting Button Text by Props
+k. App Wrapup

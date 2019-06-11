@@ -1,4 +1,5 @@
 # React Native Album Project
+Project setup https://github.com/elvinotan/vscode-react-eslint/blob/master/README.md</br>
 
 # Dive Right in
 a. Introduction - Course Roadmaps</br> 
